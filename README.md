@@ -11,13 +11,14 @@ Usage:
 
     
 Correctly implemented:
-   calculation.h/.c
+    
+    -- calculation.h/.c
         - correct mathematical formula for RGB <-> CV & CV <-> DCT 
           transformation
         - modular design for functions and helper functions
         - no memory leaks
         
-   bitpack.c:
+    -- bitpack.c:
         - 4 shifting operation functions that avoids C's property of shifting
           by word's width
         - width test, field extraction, field update functions for 64-bits 
@@ -25,7 +26,7 @@ Correctly implemented:
         - supporting uint64_t & int64_t
         - no memory leaks
         
-   *compress40.c 
+    -- compress40.c 
         - calls the corresponding compress or decompress given command from 
           40image.c
         - Compression and Decompression both works correctly.
@@ -34,7 +35,7 @@ Correctly implemented:
         - handling CREs
         - no memory leaks
         
-   *ppmdiff.c
+    -- ppmdiff.c
         - Correctly implemented to calculate the difference between ppms.
 
 
